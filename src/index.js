@@ -1,8 +1,8 @@
-module.exports = function check(str, bracketsConfig) {
+module.exports = function check(str, bracketsConf) {
 
   let stack = [];
 
-  bracketsConfig.forEach(bracket => {
+  bracketsConf.forEach(bracket => {
     stack.push(bracket.join(''));
   });
 
